@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,126 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  display: flex;
 }
+.App .faded-font {
+  color: #00000099;
+}
+.App .desc-section {
+  flex-basis: 25%;
+  background-color: #faf6f5;
+  padding: 0 30px 30px;
+}
+.App .desc-section h2 {
+  margin-top: 20px;
+}
+.App .desc-section p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+.App .desc-section .img-body {
+  display: flex;
+  justify-content: flex-end;
+}
+.App .desc-section .img-body img {
+  position: relative;
+  left: 5vw;
+  width: 28vw;
+}
+.App .main-section {
+  flex-basis: 75%;
+}
+.App .main-section a {
+  color: #068bc9;
+  text-decoration: none;
+}
+.App .main-section .lang {
+  text-align: right;
+  zoom: 0.85;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.App .main-section .alt-or {
+  width: inherit;
+  text-align: center;
+}
+.App .main-section .main-section-signup {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding-right: 30px;
+}
+.App .main-section .main-section-signup .social-sign-up {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.App .main-section .main-section-signup .social-sign-up button {
+  margin-right: 15px;
+}
+.App .main-section .main-section-signup .social-sign-up :nth-child(2) {
+  /* color: #425390;
+  background-color: #f2f2f2;
+  border-radius: 4px; */
+}
+.App .main-section .main-section-signup .social-sign-up :nth-child(3) {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.App .main-section .main-section-signup ::ng-deep .mat-checkbox-layout {
+  white-space: inherit;
+}
+.App .main-section .main-section-signup ::ng-deep .mat-checkbox-layout .mat-checkbox-inner-container {
+  margin: 0 5px 0 0;
+}
+.App .main-section .main-section-signup .submit button {
+  background-color: #f16a43;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+@media (max-width: 640px) {
+  .App {
+    flex-direction: column;
+ }
+  .App .desc-section {
+    flex-basis: 25%;
+    background-color: #faf6f5;
+    padding-bottom: 86px;
+ }
+  .App .desc-section p {
+    display: none;
+ }
+  .App .desc-section .img-body {
+    display: flex;
+    justify-content: center;
+ }
+  .App .desc-section .img-body img {
+    position: absolute;
+    left: inherit;
+    top: 20px;
+    width: 189px;
+ }
+  .App .main-section .lang {
+    display: none;
+ }
+  .App .main-section .main-section-signup {
+    margin-top: 77px;
+    padding-right: inherit;
+    width: 90%;
+ }
+}
+@media (max-width: 850px) {
+  .img-body {
+    justify-content: flex-end;
+ }
+  .img-body img {
+    left: 7vw !important;
+ }
+}
+
