@@ -43,7 +43,7 @@ function App() {
           <p className="faded-font">
             already have an account?{" "}
             <span>
-              <a>Log in</a>
+              <a href="">Log in</a>
             </span>
           </p>
 
@@ -121,11 +121,11 @@ function App() {
             <span>
               By creating account you agree to accept our{" "}
               <span>
-                <a>Privacy Policy,Terms of Service</a>
+                <a href="">Privacy Policy,Terms of Service</a>
               </span>{" "}
               and{" "}
               <span>
-                <a>Notification settings</a>
+                <a href="">Notification settings</a>
               </span>
             </span>
           </div>
