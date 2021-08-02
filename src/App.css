@@ -1,44 +1,16 @@
-/* .App {
-  text-align: center;
+html, body, #root, .App {
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .App {
   display: flex;
+  zoom: 0.9;
+}
+
+.App .MuiButton-startIcon {
+  /* display: inherit; */
+  margin-left: 0;
+  margin-right: 0;
 }
 .App .faded-font {
   color: #00000099;
@@ -63,6 +35,10 @@
   position: relative;
   left: 5vw;
   width: 28vw;
+}
+
+.App .input-field {
+  margin-top: 20px;
 }
 .App .main-section {
   flex-basis: 75%;
@@ -96,21 +72,31 @@
 .App .main-section .main-section-signup .social-sign-up button {
   margin-right: 15px;
 }
-.App .main-section .main-section-signup .social-sign-up :nth-child(2) {
-  /* color: #425390;
-  background-color: #f2f2f2;
-  border-radius: 4px; */
+
+.App .main-section .main-section-signup .social-sign-up .btn-span {
+  text-transform: initial;
 }
-.App .main-section .main-section-signup .social-sign-up :nth-child(3) {
+
+.App .main-section .main-section-signup .social-sign-up .fb {
+  color: #425390;
   background-color: #f2f2f2;
   border-radius: 4px;
 }
-.App .main-section .main-section-signup ::ng-deep .mat-checkbox-layout {
+.App .main-section .main-section-signup .social-sign-up .apple {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.App .main-section .main-section-signup .check-box-body {
   white-space: inherit;
+  margin-top: 12px;
+  display: flex;
+  align-items: end;
 }
-.App .main-section .main-section-signup ::ng-deep .mat-checkbox-layout .mat-checkbox-inner-container {
-  margin: 0 5px 0 0;
+
+.PrivateSwitchBase-root-2 {
+  padding: 0;
 }
+
 .App .main-section .main-section-signup .submit button {
   background-color: #f16a43;
   color: white;
@@ -118,6 +104,27 @@
   margin-top: 20px;
   margin-bottom: 12px;
 }
+
+.App ul#strengthBar {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: 2px;
+}
+.App .point:last {
+  margin: 0 !important;
+}
+.App .point {
+  background: #ddd;
+  border-radius: 2px;
+  display: inline-block;
+  height: 5px;
+  margin-right: 1px;
+  width: 24%;
+}
+
+
 @media (max-width: 640px) {
   .App {
     flex-direction: column;
@@ -150,10 +157,10 @@
  }
 }
 @media (max-width: 850px) {
-  .img-body {
+  .signup-body .desc-section .img-body {
     justify-content: flex-end;
  }
-  .img-body img {
+ .signup-body .desc-section .img-body img {
     left: 7vw !important;
  }
 }
